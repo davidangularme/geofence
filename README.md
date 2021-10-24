@@ -30,3 +30,4 @@ Note: If you are running this app on an emulator, you will need to use another a
 This is because geofencing relies on device sensors to detect the location of the device, which the emulator cannot access.
 "# geofence" 
 "# geofence" 
+i remove the MAPS_API_KEY , in HuntMainActivity you got function getLastLocation that take the last connection and function addGeofenceForClue that set new geofence location , the class GeofenceBroadcastReceiver got notification when you are inside or outside of radius , and when you got notification you set the new position with getLastLocation and new geofence with addGeofenceForClue  , we use share preference implementation 'com.google.code.gson:gson:2.8.6'
